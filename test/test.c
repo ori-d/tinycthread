@@ -23,7 +23,7 @@ freely, subject to the following restrictions:
 */
 
 #include <stdio.h>
-#include <tinycthread.h>
+#include <threads.h>
 #include <assert.h>
 #include <stdlib.h>
 #include <limits.h>

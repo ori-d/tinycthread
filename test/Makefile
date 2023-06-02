@@ -98,6 +98,6 @@ hello$(EXE): $(HELLO_OBJS) $(TINYCTHREAD_OBJS)
 	$(CC) $(CFLAGS) $<
 
 # Dependencies
-hello.o: hello.c ../source/tinycthread.h
-test.o: test.c ../source/tinycthread.h
-tinycthread.o: ../source/tinycthread.c ../source/tinycthread.h
+hello.o: hello.c ../source/threads.h
+test.o: test.c ../source/threads.h
+tinycthread.o: ../source/threads.c ../source/threads.h

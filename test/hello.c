@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
 */
 
 #include <stdio.h>
-#include <tinycthread.h>
+#include <threads.h>
 
 /* This is the child thread function */
 int HelloThread(void * aArg)

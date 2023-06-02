@@ -58,11 +58,11 @@ hello$(EXE): $(HELLO_OBJS) $(TINYCTHREAD_OBJS)
 	$(CC) $(LFLAGS) /Fe$@ $(HELLO_OBJS) $(TINYCTHREAD_OBJS) $(LIBS)
 
 # Dependencies
-hello.obj: hello.c ../source/tinycthread.h
+hello.obj: hello.c ../source/threads.h
 	$(CC) $(CFLAGS) hello.c
 
-test.obj: test.c ../source/tinycthread.h
+test.obj: test.c ../source/threads.h
 	$(CC) $(CFLAGS) test.c
 
-tinycthread.obj: ../source/tinycthread.c ../source/tinycthread.h
-	$(CC) $(CFLAGS) ../source/tinycthread.c
+tinycthread.obj: ../source/threads.c ../source/threads.h
+	$(CC) $(CFLAGS) ../source/threads.c
